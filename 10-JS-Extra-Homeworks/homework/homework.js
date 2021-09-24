@@ -9,8 +9,18 @@ function deObjetoAmatriz(objeto){
       B: 2,
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
-  //Escribe tu código aquí
-}
+   //Escribe tu código aquí:
+   function deObjetoAmatriz(objeto){
+   matrix=[];  
+   a=Object.values(objeto);
+   b=Object.keys(objeto);
+   tamaño=b.length-1;
+   for(i=0; i<=tamaño; i++){
+     matrix.push([b[i],a[i]]);
+    }
+   return matrix;
+  
+  }
 
 
 function numberOfCharacters(string) {
